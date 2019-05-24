@@ -1,0 +1,48 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	int i, tempA[7], tempB[7], tempC[7];
+
+	cout << "Enter all temperature for a week if Province A, B, and C." << endl;
+	cout << endl;
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province A, Day " << i + 1 << ": "; cin >> tempA[i];
+	}
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province B, Day " << i + 1 << ": "; cin >> tempB[i];
+	}
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province C, Day " << i + 1 << ": "; cin >> tempC[i];
+	}
+
+	cout << "\nDisplaying Values:" << endl;
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province A, Day " << i + 1 << " = " << tempA[i] << endl;
+	}
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province B, Day " << i + 1 << " = " << tempB[i] << endl;
+	}
+
+	for (i = 0; i < 7; i++)
+	{
+		cout << "Province C, Day " << i + 1 << " = " << tempC[i] << endl;
+	}
+
+	_getch();
+	return 0;
+}
